@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteRule ^setReminder$ registration.php [NC,L] 
+RewriteRule ^reminderDetails$ view.php [NC,L] 
+RewriteRule ^main$ index.php [NC,L] 
+RewriteRule ^processing$ x.php [NC,L]
+RewriteRule ^checkmember$ checkmember.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
+RewriteRule ^createAccount$ signup.php [NC,L]
+RewriteRule ^adminpanel$ adminpanel.php [NC,L]
+RewriteRule ^add_category$ add_category.php [NC,L]
+RewriteRule ^add_user$ add_user.php [NC,L]
+RewriteRule ^categories$ categories.php [NC,L]
+RewriteRule ^licenses$ licenses.php [NC,L]
+RewriteRule ^userlist$ userlist.php [NC,L]
+RewriteRule ^createAdmin$ admincreataccount.php [NC,L]
+RewriteRule ^addUser$ addnewuser.php [NC,L]
+RewriteRule ^addAdmin$ addnewadmin.php [NC,L]
+RewriteRule ^addLecense$ addnewlicense.php [NC,L]
+RewriteRule ^licenseList$ licenselist.php [NC,L]
+RewriteRule ^vewLicenseAdmin$ viewalllicense.php [NC,L]
+RewriteRule ^forgotpassword$ forgotpassword.php [NC,L]
+RewriteRule ^confirmotp$ confirmotp.php [NC,L]
+RewriteRule ^resetpassword$ resetpassword.php [NC,L]
+
+Options -Indexes
+
+ErrorDocument 404 /projects/reminder/notfound.php
